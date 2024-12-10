@@ -1,12 +1,11 @@
-# Universal Remedies Network Infrastructure - Bill of Materials
-
 ## 1. Core Network Infrastructure
 
-### Firewalls
+### Firewalls (Updated for VPN)
 | Part Number | Description | Quantity | Unit Price | Total Price | Notes |
 |-------------|-------------|-----------|------------|-------------|-------|
-| FG-200F | Fortinet FortiGate 200F NGFW | 2 | $4,126.12 | $8252.24 | Primary security appliances for each building |
-| FC-10-0060F-247-02-12 | 24x7 FortiCare Contract | 2 | $122.32/year | $144.64/year | Annual support contract |
+| FG-200F | Fortinet FortiGate 200F NGFW | 2 | $4,126.12 | $8,252.24 | Primary security appliances with VPN capability |
+| FC-10-0060F-247-02-12 | 24x7 FortiCare Contract | 2 | $122.32/year | $244.64/year | Annual support contract |
+| FG-VPN-SUB | FortiClient VPN Subscription | 2 | $500/year | $1,000/year | VPN licensing and support |
 
 ### Core Switches
 | Part Number | Description | Quantity | Unit Price | Total Price | Notes |
@@ -35,16 +34,10 @@
 
 ## 3. Cabling Infrastructure
 
-### Fiber Optic
-| Part Number | Description | Quantity | Unit Price | Total Price | Notes |
-|-------------|-------------|-----------|------------|-------------|-------|
-| OS2-12-OUT | 12-strand OS2 Single Mode Fiber | 500m | $4/m | $2,000 | Building interconnect (1/4 mile) |
-| FPC-SM-LC | LC Fiber Connectors | 48 | $15 | $720 | Termination connectors |
-
 ### Copper
 | Part Number | Description | Quantity | Unit Price | Total Price | Notes |
 |-------------|-------------|-----------|------------|-------------|-------|
-| CAT6A-PLE | Cat6A Plenum Cable | 15,000ft | $0.24/ft | $3562.5 | Based on 176 drops × 75ft + 15% extra |
+| CAT6A-PLE | Cat6A Plenum Cable | 15,000ft | $0.24/ft | $3,562.50 | Based on 176 drops × 75ft + 15% extra |
 | RJ45-CAT6A | Cat6A RJ45 Connectors | 400 | $3 | $1,200 | For 176 drops × 2 ends + spares |
 
 ## 4. Infrastructure Support
@@ -52,24 +45,30 @@
 ### UPS Systems
 | Part Number | Description | Quantity | Unit Price | Total Price | Notes |
 |-------------|-------------|-----------|------------|-------------|-------|
-| SRT5KRMXLT | APC Smart-UPS 5000VA RM | 4 | $6.525 | $25,100 | Two per building for redundancy |
+| SRT5KRMXLT | APC Smart-UPS 5000VA RM | 4 | $6,525 | $26,100 | Two per building for redundancy |
 
 ### Racks and Cabinets
 | Part Number | Description | Quantity | Unit Price | Total Price | Notes |
 |-------------|-------------|-----------|------------|-------------|-------|
-| AR3150 | APC NetShelter SX 42U | 4 | $2,442.03 | $9768.12 | Two per building |
+| AR3150 | APC NetShelter SX 42U | 4 | $2,442.03 | $9,768.12 | Two per building |
 
-## 5. Labor Costs
+## 5. Internet Services 
+| Service Type | Description | Quantity | Monthly Cost | Annual Cost | Notes |
+|-------------|-------------|-----------|--------------|-------------|-------|
+| ISP-BUS-1 | Primary Business Internet | 2 | $400/month | $9,600 | 1Gbps symmetric, SLA included |
+| ISP-BUS-2 | Backup Business Internet | 2 | $300/month | $7,200 | 500Mbps symmetric, SLA included |
+
+## 6. Labor Costs
 
 ### Installation Services
 | Service Type | Description | Hours | Rate | Total Cost | Notes |
 |-------------|-------------|--------|------|------------|-------|
-| Network Engineer | Core network installation | 100 | $150/hr | $15,000 | Configuration and deployment |
-| Cable Technician | Cable installation | 160 | $75/hr | $12,000 | 176 drops + fiber run |
-| Project Manager | Project oversight | 60 | $125/hr | $7,500 | Management and coordination |
+| Network Engineer | Core network installation | 80 | $150/hr | $12,000 | Configuration and deployment |
+| Cable Technician | Cable installation | 140 | $75/hr | $10,500 | 176 drops installation |
+| Project Manager | Project oversight | 50 | $125/hr | $6,250 | Management and coordination |
 
 ## Summary
-- Total Capital Expenses (CapEx): $127,325 
-- Annual Operating Expenses (OpEx): $6,785 
-- Total Labor Costs: $34,500 
-- Project Total: $209,097
+- Total Capital Expenses (CapEx): $130,914.84 
+- Annual Operating Expenses (OpEx): $24,685.64 (includes ISP costs)
+- Total Labor Costs: $28,750
+- Project Total: $184,350.48
