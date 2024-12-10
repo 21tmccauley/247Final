@@ -70,6 +70,6 @@
 
 ## Summary
 - Total Capital Expenses (CapEx): $127,325 
-- Annual Operating Expenses (OpEx): $9,639 
+- Annual Operating Expenses (OpEx): $6,785 
 - Total Labor Costs: $34,500 
 - Project Total: $209,097
